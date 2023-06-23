@@ -1,0 +1,33 @@
+本文档换行正常，如果你是用记事本打开的只有一行或者换行不正常，请丢掉记事本。
+
+请自行安装版本大于或等于 11 的 Java，推荐 Java 17。
+
+推荐下载安装 https://adoptium.net/zh-CN/temurin/releases/
+
+--------------------------------------------------------------------
+
+Windows 系统打开 Start.cmd，
+Linux/MacOS 系统打开 Start.sh。
+
+--------------------------------------------------------------------
+
+无桌面环境的系统(服务器)请打开 Start.Server.cmd 或 Start.Server.sh。
+
+登录问题请见 https://mirai.mamoe.net/topic/223
+
+手动进行滑块验证教程请见 https://docs.mirai.mamoe.net/mirai-login-solver-selenium/
+
+如需更新旧包，通常只需要删除旧包的 libraries 文件夹后将新包的 libraries 文件夹复制到旧包即可。
+
+默认的启动脚本会固定 mirai-login-solver-sakura 开放的端口为 26680，如需修改请自行修改启动脚本。
+
+【推荐安装插件】
+协议修复 https://github.com/cssxsh/fix-protocol-version/releases
+仿真设备信息生成 https://github.com/cssxsh/mirai-device-generator/releases
+登录验证处理器 https://github.com/KasukuSakura/mirai-login-solver-sakura/releases
+协议修复 服务注册失败 的备选方案 https://github.com/MrXiaoM/KawaiiMiku/releases
+扫码登录命令 https://github.com/MrXiaoM/mirai-console-dev-qrlogin/releases
+
+---------------------------------------------------------------------
+
+本整合包使用 https://github.com/MrXiaoM/Lapis 进行下载/打包，转载时请保留本帮助文件。

@@ -25,6 +25,11 @@ dependencies {
     implementation('net.mamoe:mirai-console')
     implementation('net.mamoe:mirai-console-terminal')
 }
+tasks.register('copyResources', Copy.class) {
+    duplicatesStrategy DuplicatesStrategy.EXCLUDE
+    from new File(projectDir, 'src/main/resources')
+    destinationDir miraiDir
+}
 tasks.register('generate', Copy.class) {
     duplicatesStrategy DuplicatesStrategy.EXCLUDE
     configurations.named("runtimeClasspath").configure{
@@ -33,6 +38,7 @@ tasks.register('generate', Copy.class) {
     destinationDir new File(miraiDir, 'libraries')
 }
 tasks.register("pack", Zip.class) {
+    dependsOn('copyResources')
     dependsOn('generate')
     from miraiDir
     destinationDir lapisDir
