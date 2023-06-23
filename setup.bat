@@ -1,22 +1,21 @@
-chcp 65001
 @echo off
-title Miraiä¸€é”®åŒ…æ‰“åŒ…å™¨ - Lapis
+title MiraiÒ»¼ü°ü´ò°üÆ÷ - Lapis
 echo.
-echo.  åœ¨è¿è¡Œæœ¬ç¨‹åºä¹‹å‰, è¯·ç¡®ä¿ä½ å·²ç»å®‰è£… java.
-echo.  è¯·åœ¨ä¸‹æ–¹è¾“å…¥ç‰ˆæœ¬å·å¹¶å›žè½¦ä»¥ä¸‹è½½å¼€å‘ç‰ˆæœ¬.
-echo.  å¼€å‘ç‰ˆæœ¬çš„ç‰ˆæœ¬å·å¯ä»¥åœ¨ä»¥ä¸‹é“¾æŽ¥ä¸­èŽ·å–:
+echo.  ÔÚÔËÐÐ±¾³ÌÐòÖ®Ç°, ÇëÈ·±£ÄãÒÑ¾­°²×° java.
+echo.  ÇëÔÚÏÂ·½ÊäÈë°æ±¾ºÅ²¢»Ø³µÒÔÏÂÔØ¿ª·¢°æ±¾.
+echo.  ¿ª·¢°æ±¾µÄ°æ±¾ºÅ¿ÉÒÔÔÚÒÔÏÂÁ´½ÓÖÐ»ñÈ¡:
 echo.  https://repo.mirai.mamoe.net/snapshots/net/mamoe/mirai-core
 echo.
-set /p version="è¾“å…¥ç‰ˆæœ¬å·: "
-echo.æ³¨: å…¶ä¸­ä¸€ä¸ªåº“ä¸‹è½½è€—æ—¶è¾ƒé•¿ï¼Œè¯·è€å¿ƒç­‰å¾…
+set /p version="ÊäÈë°æ±¾ºÅ: "
+echo.×¢: ÆäÖÐÒ»¸ö¿âÏÂÔØºÄÊ±½Ï³¤£¬ÇëÄÍÐÄµÈ´ý
 echo.
-title Miraiä¸€é”®åŒ…æ‰“åŒ…å™¨ æ­£åœ¨ä¸‹è½½ %version% - Lapis
+title MiraiÒ»¼ü°ü´ò°üÆ÷ ÕýÔÚÏÂÔØ %version% - Lapis
 
 cmd /c gradlew.bat clearLibs pack -Dlapis.version=%version%
 
-title Miraiä¸€é”®åŒ…æ‰“åŒ…å™¨ - Lapis
+title MiraiÒ»¼ü°ü´ò°üÆ÷ - Lapis
 echo.
-echo.  è‹¥æç¤º BUILD SUCCESSFUL, ä¸€é”®åŒ…å·²æˆåŠŸæ‰“åŒ…åˆ° ./build/lapis æ–‡ä»¶å¤¹ä¸­.
-echo.  è‹¥æç¤º BUILD FAILED, å¯èƒ½æ˜¯ç‰ˆæœ¬å·è¾“å…¥é”™è¯¯æˆ–è€…ç½‘ç»œé—®é¢˜.
-echo.  æŒ‰ä»»æ„é”®é€€å‡º
+echo.  ÈôÌáÊ¾ BUILD SUCCESSFUL, Ò»¼ü°üÒÑ³É¹¦´ò°üµ½ ./build/lapis ÎÄ¼þ¼ÐÖÐ.
+echo.  ÈôÌáÊ¾ BUILD FAILED, ¿ÉÄÜÊÇ°æ±¾ºÅÊäÈë´íÎó»òÕßÍøÂçÎÊÌâ.
+echo.  °´ÈÎÒâ¼üÍË³ö
 pause>nul
