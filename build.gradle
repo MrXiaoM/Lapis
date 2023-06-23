@@ -25,3 +25,10 @@ dependencies {
     implementation('net.mamoe:mirai-console')
     implementation('net.mamoe:mirai-console-terminal')
 }
+tasks.register('generate', Copy.class) {
+    duplicatesStrategy DuplicatesStrategy.EXCLUDE
+    configurations.named("runtimeClasspath").configure{
+        it.files.forEach { from it }
+    }
+    destinationDir new File(miraiDir, 'libraries')
+}
