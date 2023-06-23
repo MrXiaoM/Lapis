@@ -25,6 +25,9 @@ dependencies {
     implementation('net.mamoe:mirai-console')
     implementation('net.mamoe:mirai-console-terminal')
 }
+tasks.register('clearLibs', Delete.class) {
+    delete new File(buildDir, 'mirai')
+}
 tasks.register('copyResources', Copy.class) {
     duplicatesStrategy DuplicatesStrategy.EXCLUDE
     from new File(projectDir, 'src/main/resources')
