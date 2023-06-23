@@ -20,4 +20,8 @@ repositories {
     }
 }
 dependencies {
+    implementation(platform('net.mamoe:mirai-bom:' + version))
+    implementation('net.mamoe:mirai-core')
+    implementation('net.mamoe:mirai-console')
+    implementation('net.mamoe:mirai-console-terminal')
 }
