@@ -1,6 +1,10 @@
 plugins {
     id 'java'
 }
+
+def miraiDir = new File(buildDir, 'mirai')
+def lapisDir = new File(buildDir, 'lapis')
+
 group 'top.mrxiaom'
 version System.getProperty("lapis.version", "2.15.0-RC")
 
