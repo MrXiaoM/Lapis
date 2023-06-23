@@ -1,18 +1,18 @@
-Write-Output ""
-Write-Output "  ÔÚÔËĞĞ±¾³ÌĞòÖ®Ç°, ÇëÈ·±£ÄãÒÑ¾­°²×° java."
-Write-Output "  ÇëÔÚÏÂ·½ÊäÈë°æ±¾ºÅ²¢»Ø³µÒÔÏÂÔØ¿ª·¢°æ±¾."
-Write-Output "  ¿ª·¢°æ±¾µÄ°æ±¾ºÅ¿ÉÒÔÔÚÒÔÏÂÁ´½ÓÖĞ»ñÈ¡:"
+ï»¿Write-Output ""
+Write-Output "  åœ¨è¿è¡Œæœ¬ç¨‹åºä¹‹å‰, è¯·ç¡®ä¿ä½ å·²ç»å®‰è£… java."
+Write-Output "  è¯·åœ¨ä¸‹æ–¹è¾“å…¥ç‰ˆæœ¬å·å¹¶å›è½¦ä»¥ä¸‹è½½å¼€å‘ç‰ˆæœ¬."
+Write-Output "  å¼€å‘ç‰ˆæœ¬çš„ç‰ˆæœ¬å·å¯ä»¥åœ¨ä»¥ä¸‹é“¾æ¥ä¸­è·å–:"
 Write-Output "  https://repo.mirai.mamoe.net/snapshots/net/mamoe/mirai-core"
 Write-Output ""
-$version = Read-Host "ÊäÈë°æ±¾ºÅ"
-Write-Output "×¢: ÆäÖĞÒ»¸ö¿âÏÂÔØºÄÊ±½Ï³¤£¬ÇëÄÍĞÄµÈ´ı"
+$version = Read-Host "è¾“å…¥ç‰ˆæœ¬å·"
+Write-Output "æ³¨: å…¶ä¸­ä¸€ä¸ªåº“ä¸‹è½½è€—æ—¶è¾ƒé•¿ï¼Œè¯·è€å¿ƒç­‰å¾…"
 Write-Output
 
 ./gradlew clearLibs pack -Dlapis.version=$version
 
 Write-Output ""
-Write-Output "  ÈôÌáÊ¾ BUILD SUCCESSFUL, Ò»¼ü°üÒÑ³É¹¦´ò°üµ½ ./build/lapis ÎÄ¼ş¼ĞÖĞ."
-Write-Output "  ÈôÌáÊ¾ BUILD FAILED, ¿ÉÄÜÊÇ°æ±¾ºÅÊäÈë´íÎó»òÕßÍøÂçÎÊÌâ."
-Write-Output "  °´ÈÎÒâ¼üÍË³ö"
+Write-Output "  è‹¥æç¤º BUILD SUCCESSFUL, ä¸€é”®åŒ…å·²æˆåŠŸæ‰“åŒ…åˆ° ./build/lapis æ–‡ä»¶å¤¹ä¸­."
+Write-Output "  è‹¥æç¤º BUILD FAILED, å¯èƒ½æ˜¯ç‰ˆæœ¬å·è¾“å…¥é”™è¯¯æˆ–è€…ç½‘ç»œé—®é¢˜."
+Write-Output "  æŒ‰ä»»æ„é”®é€€å‡º"
 
 [Console]::ReadKey()
