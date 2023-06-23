@@ -32,3 +32,9 @@ tasks.register('generate', Copy.class) {
     }
     destinationDir new File(miraiDir, 'libraries')
 }
+tasks.register("pack", Zip.class) {
+    dependsOn('generate')
+    from miraiDir
+    destinationDir lapisDir
+    archiveFileName.set('Mirai一键包 ' + rootProject.version + '.zip')
+}
