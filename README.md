@@ -13,8 +13,8 @@ Linux/MacOS 系统打开 `setup.sh`
 
 按照提示，输入版本号并回车即可。
 
-出现绿色的 BUILD SUCCESSFUL 时，代表构建成功，  
-可到 ./build/lapis 文件夹寻找打包好的一键包，找个地方解压使用。
+出现绿色的 `BUILD SUCCESSFUL` 时，代表构建成功，  
+可到 `./build/lapis` 文件夹寻找打包好的一键包，找个地方解压使用。
 
 ## 捐助
 
