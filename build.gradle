@@ -43,6 +43,7 @@ tasks.register('generate', Copy.class) {
 tasks.register("pack", Zip.class) {
     dependsOn('copyResources')
     dependsOn('generate')
+    metadataCharset 'UTF-8'
     from miraiDir
     destinationDir lapisDir
     archiveFileName.set('Mirai一键包 ' + rootProject.version + '.zip')
