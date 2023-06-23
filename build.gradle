@@ -1,0 +1,10 @@
+plugins {
+    id 'java'
+}
+group 'top.mrxiaom'
+version '1.0-SNAPSHOT'
+repositories {
+    mavenCentral()
+}
+dependencies {
+}
