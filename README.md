@@ -6,6 +6,7 @@ mirai-console 开发版一键安装器。
 
 在本仓库点击 `Code` -> `Download Zip` 将源代码拉到本地并解压。  
 **确保你的系统已经安装 `Java`**  
+尽可能使用 `Java 17`，**不要**使用 `Java 20`  
 到 [Mirai预览仓库](https://repo.mirai.mamoe.net/snapshots/net/mamoe/mirai-core) 寻找你要安装的版本，记下来。
 
 Windows 系统打开 `setup.ps1` 或 `setup.bat`  
